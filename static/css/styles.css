@@ -1,0 +1,131 @@
+.logo_img {
+    width: 95px;
+    height: 70px;
+    margin-bottom: 6px;
+    padding-left: 30px;
+  }
+  
+  .anika {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+  
+  }
+  .container-fluid{
+    margin-top: 60px;
+  }
+  
+  .nav-item {
+    padding: 0px 30px;
+    font-size: 22px;
+  }
+  
+  .navbar-nav {
+    padding-right: 100px;
+  }
+  
+  .sterilis {
+    color: white;
+  }
+  
+
+
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+  }
+  
+  .about img {
+    height: auto;
+    width: 430px;
+  }
+  
+  .about-textt {
+    /* width: 550px; */
+  }
+  
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  @media screen and (max-width: 991px){
+    .main{
+      flex-direction: column;
+  
+    }
+  }
+  
+  
+  
+  .about-textt h2 {
+    color: #ffffff;
+    font-size: 60px;
+    
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .about-textt h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    /* text-transform: capitalize; */
+  }
+  
+  .about-textt p {
+    color: #ffffff;
+    /* letter-spacing: 1px; */
+    /* line-height: 1.6; */
+    text-align: right;
+    text-indent: 3px;
+    font-size: 35px;
+    font-weight: 220;
+    margin-bottom: 45px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+  }
+
+  .heart{
+    color: rgb(255, 255, 255);
+    font-size: 40px; 
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .photo img {
+    width: 500px;
+    height: 500px;
+  }
+ 
+  #myvideo {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    /* padding: 20px; */
+    z-index: -10;
+    opacity: 1;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    #myvideo {
+        width:100%;
+        height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    #myvideo { 
+        width:auto;
+        height: 100%;
+    }
+  }

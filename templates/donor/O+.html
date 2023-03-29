@@ -1,0 +1,261 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing Availabilty O+</title>
+    <link rel="shortcut icon" href=" {% static '/image/Heart_image.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+    <style>
+
+
+      *{
+          font-family: 'Times New Roman', Times, serif;
+      }
+          .tablee {
+margin: 0 auto!important;
+margin-top: 100px !important;
+width:95%;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+display: table !important;
+font-family: 'Times New Roman', Times, serif;
+border-bottom: 3px solid red;
+border-top: transparent;
+
+}
+
+.roww {
+display: table-row;
+background: #e2e2e2b7;
+outline: 2px solid rgb(223, 193, 193) !important;
+}
+.roww:nth-of-type(odd) {
+background: #e9e9e9d2;
+}
+.roww.headerr {
+font-weight: bold;
+color: #ffffff;
+background: #bf2229;
+}
+.celll {
+padding: 10px 15px;
+
+display: table-cell;
+}
+
+
+  
+.BA{
+font-family: 'Times New Roman', Times, serif;
+color: tomato;
+}   
+
+.namee{
+/* text-align: center; */
+
+font-weight: bold;
+font-size: 15px;
+
+
+}
+.red-color {
+      color:red;
+      font-size: 20px;
+  }
+
+.avail{
+  color: rgb(0, 255, 42);
+  font-weight: bold;
+}
+.not{
+  color: #bf2229;
+}
+.get{
+  border: 2px solid #bf2229 !important;
+  border-radius: 0 !important;
+}
+.show{
+margin-left: 100px;
+color: white;
+/* margin-top: 100px; */
+
+
+}
+#myvideo {
+  position: fixed;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* color: #f1f1f1; */
+  width: 100%;
+  /* padding: 20px; */
+  z-index: -1;
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="myvideo" src="{% static '/image/bgmvideo.mov' %}"></video>
+  {% include "blood/navbar.html" %} <br><br>
+  
+    <section class="tabble hidden" id="content-7">
+      <h3 class="show">Showing Availability of <span style="color: transparent;">ff</span> <span style="color: red;outline: 2px solid white;"> O+Blood</span> :  </h3>
+
+  <div class="tablee">
+    
+    <div class="roww headerr">
+      <div class="celll namee" style="border-right: 2px solid black;">
+    Name of the Blood Bank
+      </div>
+      <div class="celll" style="border-right: 2px solid black;text-align: center;">
+       Address
+      </div>
+      <div class="celll" style="border-right: 2px solid black;text-align: center;">
+       Phone
+      </div>
+      <div class="celll" style="border-right: 2px solid black;text-align: center;">
+       Email
+      </div>
+      <div class="celll" style="border-right: 2px solid black;">
+        Category
+      </div>
+      <div class="celll" style="border-right: 2px solid black;text-align: center;">
+        Availability
+      </div>
+      <div class="celll" style="border-right: 2px solid black;padding-right: 20px;">
+        Last<span style="color: transparent;">s</span>Updated
+      </div>
+      
+    </div>
+    <div class="roww">
+      <div class="celll" data-title="Name" style="border-right: 2px solid black; padding-left: 20px;">
+        ECM Blood Bank
+      </div>
+      <div class="celll" data-title="Age" style="border-right: 2px solid black;">
+        Vignans IIT,Visakhapatnam,Andhra Pradesh <button type="button" class="btn btn-outline-secondary get"><a href="https://www.google.co.in/maps/place/A.+S.+RajA-Voluntary+Blood+Bank/@17.7202888,83.310862,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3943156f3605a3:0x1bc2e9333b02d7d8!8m2!3d17.7202888!4d83.3130507!16s%2Fg%2F1tdzdds9" target="_blank" style="text-decoration: none; color: black;"><i class='fas fa-directions red-color'></i> <span style="color: black; font-size: 15px;">Get Directions</span></a> </button>
+      </div>
+      <div class="celll" data-title="Occupation" style="border-right: 2px solid black;">
+       08912543436
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        ECMbloodbank@gmail.com
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        Private
+      </div>
+      <div class="celll avail" data-title="Location" style="border-right: 2px solid black;">
+        Available,O+Ve:2
+      </div>
+      <div class="celll" data-title="Location" >
+        2023-03-10 00:00:00
+      </div>
+     
+    </div>
+    
+    <!-- <div class="roww">
+      <div class="celll" data-title="Name" style="border-right: 2px solid black;">
+        Lions Blood Bank
+      </div>
+      <div class="celll" data-title="Age" style="border-right: 2px solid black;">
+        D.No. 10-54-7, Lions Community Hall,Ram Nagar,Visakhapatnam,Andhra Pradesh<button type="button" class="btn btn-outline-secondary get"><a href="https://www.google.co.in/maps/search/lions+blood+bank/@17.7210119,83.3100905,16z/data=!3m1!4b1" target="_blank" style="text-decoration: none; color: black;"><i class='fas fa-directions red-color'></i> <span style="color: black; font-size: 15px;">Get Directions</span></a> </button>
+      </div>
+      <div class="celll" data-title="Occupation" style="border-right: 2px solid black;">
+        8912598001,<br>6309552515
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        lionsbloodbankvsp@gmail.com
+      </div>
+      <div class="celll" data-title="Occupation" style="border-right: 2px solid black;">
+        Private
+      </div>
+      <div class="celll avail" data-title="Location" style="border-right: 2px solid black;">
+        Available,O+Ve:1
+      </div>
+      <div class="celll" data-title="Occupation">
+        2023-03-07 12:31:40
+      </div>
+     
+    </div>
+    
+    <div class="roww">
+      <div class="celll" data-title="Name" style="border-right: 2px solid black;">
+        Rotary Blood Bank
+      </div>
+      <div class="celll" data-title="Age" style="border-right: 2px solid black;">
+        Rotary Blood Centre, (Visakha Portcity Charitable Trust)
+        D.No. 13-26-2/54, 3rd Floor, Apuroopa Archede, Jagadamaba Ju, Visakhapatnam, Andhra Pradesh<button type="button" class="btn btn-outline-secondary get"><a href="https://www.google.co.in/maps/place/Rotary+Blood+Bank/@17.7116071,83.3011579,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3969b1dfffbd55:0xc34df9cd4458f6de!8m2!3d17.711602!4d83.3033466!16s%2Fg%2F1tdqy467" target="_blank" style="text-decoration: none; color: black;"><i class='fas fa-directions red-color'></i> <span style="color: black; font-size: 15px;">Get Directions</span></a> </button>
+      </div>
+      <div class="celll" data-title="Occupation" style="border-right: 2px solid black;">
+        08916534635, 08912506678
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        Rotarybloodbankvsp@gmail.com
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        Private
+      </div><div class="celll avail" data-title="Location" style="border-right: 2px solid black;">
+        Available,O+Ve:1
+      </div><div class="celll" data-title="Location">
+        2023-03-08 07:39:33
+      </div>
+     
+    </div>
+    
+    <div class="roww">
+      <div class="celll" data-title="Name" style="border-right: 2px solid black;">
+        N.T.R Trust Blood Bank
+      </div>
+      <div class="celll" data-title="Age"style="border-right: 2px solid black;">
+        10,Waltair Main Rd,Nehru Nagar TPT/VUDA Colony,Nehru Nagar,Ram Nagar,Visakhapatnam,<br>Andhra Pradesh <br><button type="button" class="btn btn-outline-secondary get"><a href="https://www.google.co.in/maps/place/NTR+TRUST+BLOOD+BANK/@17.7181094,83.3065546,17z/data=!3m1!4b1!4m6!3m5!1s0x3a394315ca7ae4b7:0x4b532b8147294887!8m2!3d17.7181043!4d83.3107818!16s%2Fg%2F11c5bkdk9s" target="_blank" style="text-decoration: none; color: black;"><i class='fas fa-directions red-color'></i> <span style="color: black; font-size: 15px;">Get Directions</span></a> </button>
+      </div>
+      <div class="celll" data-title="Occupation"style="border-right: 2px solid black;">
+        08912555858, 09032005619
+      </div>
+      <div class="celll" data-title="Location"style="border-right: 2px solid black;">
+        vizagbb@ntrtrust.org
+      </div><div class="celll" data-title="Location"style="border-right: 2px solid black;">
+        Private/Charitable
+      </div><div class="celll not" data-title="Location"style="border-right: 2px solid black;" >
+       <span style="color:#bf222acc; font-weight: bold;">Whole Blood </span>Not Available Search for another Component
+      </div><div class="celll" data-title="Location">
+        2023-03-08 07:22:18
+      </div>
+    </div>
+    
+    <div class="roww">
+      <div class="celll" data-title="Age" style="border-right: 2px solid black; padding-right: 100px;">
+        Gitam Institute Of Medical Sciences And Research Blood Bank
+      </div>
+      <div class="celll" data-title="Age" style="border-right: 2px solid black;">
+        Door No. 5-168, Ward No. 6, GITAM University, Rushikonda,Visakhapatnam, Andhra Pradesh<button type="button" class="btn btn-outline-secondary get"><a href="https://www.google.co.in/maps/place/M%2FS.+Gitam+Institute+Of+Medical+Sciences+And+Research+Blood+Bank/@17.7879182,83.3385769,13z/data=!3m1!4b1!4m6!3m5!1s0x3a395b06aaaaaaab:0x3439920d1d407c25!8m2!3d17.7878396!4d83.3735966!16s%2Fg%2F11jbprc5d4" target="_blank" style="text-decoration: none; color: black;"><i class='fas fa-directions red-color'></i> <span style="color: black; font-size: 15px;">Get Directions</span></a> </button>
+      </div>
+      <div class="celll" data-title="Occupation" style="border-right: 2px solid black;">
+        08912524777, 9985556050
+      </div>
+      <div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        directorgims@gitam.edu
+      </div><div class="celll" data-title="Location" style="border-right: 2px solid black;">
+        Private
+      </div><div class="celll avail" data-title="Location" style="border-right: 2px solid black;">
+        Available,O+Ve:4
+      </div><div class="celll" data-title="Location" >
+        2023-03-08 07:47:02
+      </div>
+    </div> -->
+    
+  </div>
+</section><br><br>
+{% include "blood/footer.html" %}
+
+</body>
+</html>
